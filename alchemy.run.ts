@@ -78,6 +78,7 @@ const appWorker = await Worker(workerName, {
   accountId: "<accountId>",
   compatibilityDate: "2025-09-08",
   observability: { enabled: true },
+  // version: isAppProd ? undefined : app.stage,
   domains: [
     {
       domainName: workerDomain,
